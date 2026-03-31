@@ -4,24 +4,6 @@ Real-time, microservices-based pipeline for analysing construction equipment in 
 
 ---
 
-## Quick Start
-
-```bash
-# 1. Clone and enter the repo
-git clone <your-repo-url>
-cd equipment-vision
-
-# 2. Drop your video file into ./data/
-mkdir data
-cp /path/to/excavator_footage.mp4 data/video.mp4
-
-# 3. Spin everything up
-docker compose up --build
-
-# 4. Open the dashboard
-open http://localhost:8501
-```
-
 That's it. Docker handles Kafka, TimescaleDB, the CV service, and the Streamlit UI.
 
 ---
